@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Create element</title>
+		<script type="text/javascript">
+			
+		function createTag()
+		{
+			let myheading=document.createElement("h1");
+			myheading.innerHTML="Hey i am heading of javascript";
+			
+			myheading.style.backgroundColor="red";
+			myheading.style.color="white";
+			myheading.style.padding="10px";
+			myheading.style.borderRadius="15px";
+			myheading.style.width="660px";
+			myheading.style.marginLeft="200px";
+			
+			let bodyTag=document.getElementById("b");
+			bodyTag.appendChild(myheading);
+		}
+		</script>
+		
+		
+		<style>
+			input
+			{
+				width:400px;
+				height:40px;
+			}
+		</style>
+		
+	</head>
+	
+	<body id="b">
+	<input type='button' name='s' value='create heading' onclick='createTag()' />
+		
+	</body>
+</html>
